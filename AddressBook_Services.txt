@@ -15,11 +15,16 @@ EMAIL varchar(20)
 insert into AddressBook(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL) values ('SADIQ', 'HUSSAIN', 'PASIYANA', 'JABALPUR', 'MP', 482004, 7828606108, 'ksadik320@gmail.com');
 
 insert into AddressBook(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL) values  ('SUDARSHAN', 'GAIKWAD', 'GOUN', 'OKLA', 'MH', 400037, 9615487262, 'shudarshan@gmail.com');
+
+insert into AddressBook(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL) values  ('Ashish', 'PAL', 'GOUN', 'Noida', 'UP', 400037, 9635487262, 'ashispal@gmail.com');
+
  
  update AddressBook set EMAIL='neweamail@gmail.com' where FIRST_NAME='SUDARSHAN';
 
 delete from AddressBook where FIRST_NAME='SUDARSHAN';
 
-
-
 select * from AddressBook where CITY='JABALPUR' OR STATE='MP';
+
+SELECT COUNT(*) AS City_Count FROM AddressBook WHERE CITY='JABALPUR';
+
+SELECT COUNT(*) AS State_Count FROM AddressBook WHERE STATE='MP';
