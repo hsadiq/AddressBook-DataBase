@@ -34,5 +34,14 @@ FROM AddressBook
 WHERE CITY = 'JABALPUR'
 ORDER BY FIRST_NAME, LAST_NAME ASC;
 
+ALTER TABLE AddressBook
+ADD COLUMN Type varchar(20);
 
+update AddressBook set type='Family' where FIRST_NAME='SADIQ' AND FIRST_NAME='SUDARSHAN';
+update AddressBook set type='Friends' where FIRST_NAME='Ashish' AND FIRST_NAME='Kanishk';
+
+INSERT INTO AddressBook (FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL, Type)
+VALUES 
+('John', 'Doe', '123 Main Street', 'Cityville', 'Stateville', 12345, 9876543210, 'john@example.com', 'Family'),
+('Jane', 'Smith', '456 Elm Street', 'Townsville', 'Stateville', 67890, 1234567890, 'jane@example.com', 'Friends');
 
