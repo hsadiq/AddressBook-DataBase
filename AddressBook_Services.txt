@@ -16,3 +16,5 @@ insert into AddressBook(FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_
  ('SUDARSHAN', 'GAIKWAD', 'GOUN', 'OKLA', 'MH', 400037, 9615487262, 'shudarshan@gmail.com');
  
  update AddressBook set EMAIL='neweamail@gmail.com' where FIRST_NAME='SUDARSHAN';
+
+delete from AddressBook where FIRST_NAME='SUDARSHAN';
