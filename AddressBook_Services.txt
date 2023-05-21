@@ -1,2 +1,13 @@
 create database AddressBook_Services;
 use AddressBook_Services;
+
+CREATE TABLE AddressBook(
+FIRST_NAME varchar(20),
+LAST_NAME varchar(20),
+ADDRESS varchar(100),
+CITY varchar(20),
+STATE varchar(20),
+ZIP int,
+PHONE_NUMBER long,
+EMAIL varchar(20)
+);
