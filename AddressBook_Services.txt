@@ -48,3 +48,9 @@ VALUES
 SELECT STATE, COUNT(*) AS contact_count
 FROM AddressBook
 GROUP BY STATE;
+
+INSERT INTO AddressBook (FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL, TYPE)
+VALUES ('Mudassir', 'Masoori', '123 Main street', 'jabalpur', 'Telengana', 12345, 1234567890, 'mudassir@example.com', 'Friend');
+
+INSERT INTO AddressBook (FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, ZIP, PHONE_NUMBER, EMAIL, TYPE)
+VALUES ('Arbaz', 'Ansari', 'tedi Neem', 'jabalpur', 'ChattisGarh', 1234545, 18744567890, 'rarbaz@example.com', 'Family');
