@@ -45,3 +45,6 @@ VALUES
 ('John', 'Doe', '123 Main Street', 'Cityville', 'Stateville', 12345, 9876543210, 'john@example.com', 'Family'),
 ('Jane', 'Smith', '456 Elm Street', 'Townsville', 'Stateville', 67890, 1234567890, 'jane@example.com', 'Friends');
 
+SELECT STATE, COUNT(*) AS contact_count
+FROM AddressBook
+GROUP BY STATE;
